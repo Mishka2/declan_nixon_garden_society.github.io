@@ -29,15 +29,15 @@ body {
     font-weight: 300;
 }
 
-#subtitle_description {
+#info_body {
     font-size: 20px;
     color: rgb(100, 100, 100);
-    width: 60vw;
+    width: 80vw;
     text-align: center;
     margin-left: 50%;
     transform: translate(-50%, 0);
     margin-top: 5%;
-    height: 20vw;
+    height: 40vw;
 }
 
 #logo {
@@ -45,17 +45,17 @@ body {
     height: 12vw;
     background-image: url(declan_nixon_logo.png);
     background-size: cover;
-    transform: translate(25%, 10%);
+    transform: translate(35%, 10%);
     position: absolute;
 }
 
 #nav_items {
     position: absolute;
-    background-color: rgba(39, 60, 6, 0.3);
+    background-color: rgba(38, 59, 4, 0.2);
     border-width: 1.5px 0px 1.5px 0px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.5);
-    margin-top: 4.5vw;
+    margin-top: 5.1vw;
     height: 3vw;
     width: 100%;
 }
@@ -66,7 +66,7 @@ body {
     width: 15vw;
     color: rgba(255, 255, 255, 0.8);
     font-size: 1.3vw;
-    margin-right: 5%;
+    margin-right: 10%;
     margin-top: 0.8%;
 }
 
@@ -88,6 +88,49 @@ body {
 #bottom_contact {
     text-align: center;
     padding-top: 4.5vw;
+}
+
+#about_section {
+    position: absolute;
+}
+
+#writing_about {
+    float: left;
+    text-align: left;
+}
+
+#picture_about {
+    float: right;
+    background-image: url("garden_house.png");
+    width: 30vw;
+    height: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 3.5vw;
+}
+
+#about_title {
+    font-size: 3.8vw;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: 4vw;
+}
+
+#about_para {
+    margin-top: 4vw;
+    width: 35vw;
+    font-size: 1.3vw;
+}
+
+#a,
+a:link,
+a:visited {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+#a,
+a:hover {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 900px) {
@@ -123,7 +166,29 @@ body {
     }
     #footer {
         bottom: 0;
-        position: absolute;
         height: 8vh;
+    }
+    #info_body {
+        height: 150vw;
+    }
+    #about_title {
+        font-size: 6.5vw;
+        margin-top: 14vw;
+    }
+    #about_para {
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 3.2vw;
+        margin-top: 12vw;
+        width: 80vw;
+    }
+    #writing_about {
+        float: none;
+    }
+    #picture_about {
+        float: none;
+        width: 75vw;
+        height: 75vw;
+        margin-top: 15vw;
     }
 }
